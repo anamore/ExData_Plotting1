@@ -25,7 +25,7 @@ plot4<-function(){
    data1$Sub_metering_3<-as.numeric(data1$Sub_metering_3)
 
    # specify device and create plot
-   png(file="plot4.png",width = 480, height = 480, units = "px", bg = "transparent")
+   png(file="plot4.png",width = 480, height = 480, units = "px", bg = "white")
    par(mfrow=c(2,2))
    plot(x=data1$Time, y=data1$Global_active_power,type="l",xlab="", ylab="Global Active Power (kilowatts)")
    plot(x=data1$Time, y=data1$Voltage,type="l",xlab="datetime", ylab="Voltage")

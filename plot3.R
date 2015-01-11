@@ -25,7 +25,7 @@ plot3<-function(){
    data1$Sub_metering_3<-as.numeric(data1$Sub_metering_3)
 
    # specify device and create plot
-   png(file="plot3.png",width = 480, height = 480, units = "px", bg = "transparent")
+   png(file="plot3.png",width = 480, height = 480, units = "px", bg = "white")
    plot(x=data1$Time, y=data1$Sub_metering_1,type="l",xlab="", ylab="Energy sub metering",col="grey")
    lines(x=data1$Time, y=data1$Sub_metering_2,type="l",col="red")
    lines(x=data1$Time, y=data1$Sub_metering_3,type="l",col="blue")

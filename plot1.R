@@ -25,7 +25,7 @@ plot1<-function(){
    data1$Sub_metering_3<-as.numeric(data1$Sub_metering_3)
 
    # specify device and create plot
-   png(file="plot1.png",width = 480, height = 480, units = "px", bg = "transparent")
+   png(file="plot1.png",width = 480, height = 480, units = "px", bg = "white")
    hist(data1$Global_active_power,col="red", main = "Global Active Power", xlab="Global Active Power (kilowatts)")
    dev.off()
 
